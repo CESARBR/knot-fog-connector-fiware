@@ -191,7 +191,32 @@ class Connector {
     await this.client.subscribe(`/default/${device.id}/cmd`);
   }
 
-  async removeDevice(id) { // eslint-disable-line no-empty-function,no-unused-vars
+  async removeDevice(id) {
+    let url = `${this.iotAgentUrl}/iot/devices/${id}`;
+    const headers = {
+      'fiware-service': 'knot',
+      'fiware-servicepath': '/device',
+    };
+
+    await request.delete({ url, headers, json: true });
+
+    headers['fiware-servicepath'] = `/device/${id}`;
+    url = `${this.iotAgentUrl}/iot/devices`;
+    const sensors = await request.get({ url, headers, json: true });
+    if (sensors.count === 0) {
+      return;
+    }
+
+    const promises = sensors.devices.map(async (sensor) => {
+      url = `${this.iotAgentUrl}/iot/devices/${sensor.device_id}`;
+      await request.delete({ url, headers, json: true });
+    });
+
+    await Promise.all(promises);
+
+    const { resource } = config.get('service');
+    url = `${this.iotAgentUrl}/iot/services/?resource=${resource}&apikey=${id}`;
+    await request.delete({ url, headers, json: true });
   }
 
   async listDevices() {

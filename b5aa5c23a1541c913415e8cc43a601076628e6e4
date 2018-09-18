@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ae8fafa_1848158d",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:49:57Z",
+      "side": 1,
+      "message": "Remove this",
+      "range": {
+        "startLine": 238,
+        "startChar": 16,
+        "endLine": 238,
+        "endChar": 23
+      },
+      "revId": "b5aa5c23a1541c913415e8cc43a601076628e6e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "bf12fd5b_cb54a3af",
+        "filename": "esm/Connector.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T20:11:31Z",
+      "side": 1,
+      "message": "I\u0027m not sure how problematic it is to have multiple message handlers, but I feel that we could have only one created in `start()` that would call the `cb` passed to onDataUpdated/onDataRequested/.... These callbacks could start as _.noop(), for instance, to avoid having to do null checks.\n\nWhat do you think? Or it this way of creating multiple handlers the usual way?",
+      "range": {
+        "startLine": 257,
+        "startChar": 4,
+        "endLine": 257,
+        "endChar": 18
+      },
+      "revId": "ac383c9ae15d7103ec8ed26ce86b829bc1b6fd9c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "32058c47_69a29759",
+        "filename": "esm/Connector.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T20:11:31Z",
+      "side": 1,
+      "message": "message",
+      "range": {
+        "startLine": 258,
+        "startChar": 12,
+        "endLine": 258,
+        "endChar": 15
+      },
+      "revId": "ac383c9ae15d7103ec8ed26ce86b829bc1b6fd9c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "185a5fa0_bd984447",
         "filename": "esm/Connector.js",
         "patchSetId": 3

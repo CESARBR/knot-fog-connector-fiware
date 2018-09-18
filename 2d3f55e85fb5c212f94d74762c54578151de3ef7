@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb6a9e0a_9a8d108d",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:11:38Z",
+      "side": 1,
+      "message": "No need to pass a string, it will be ignored by the user.",
+      "range": {
+        "startLine": 140,
+        "startChar": 46,
+        "endLine": 140,
+        "endChar": 57
+      },
+      "revId": "2d3f55e85fb5c212f94d74762c54578151de3ef7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

@@ -22,6 +22,29 @@
       "revId": "df50263b2d610414244c0aefc6565f6e8af7459d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52493a03_d69c361a",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T18:40:23Z",
+      "side": 1,
+      "message": "Did you see this library: https://github.com/telefonicaid/iotagent-node-lib? Could we replace this work of settings headers, URLs and making the HTTP request with this library (or another, if this isn\u0027t the IoT Agent library)?",
+      "range": {
+        "startLine": 13,
+        "startChar": 15,
+        "endLine": 13,
+        "endChar": 28
+      },
+      "revId": "df50263b2d610414244c0aefc6565f6e8af7459d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

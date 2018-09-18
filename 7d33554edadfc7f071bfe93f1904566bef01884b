@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "871e4d50_17175d9e",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T14:07:28Z",
+      "side": 1,
+      "message": "This will break in a clean install, you should use the post install hook.",
+      "revId": "7d33554edadfc7f071bfe93f1904566bef01884b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

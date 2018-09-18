@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "346ac0bb_946046e6",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:02:40Z",
+      "side": 1,
+      "message": "As you called the other function mapSchemaToFiware, this could be mapSchemaFromFiware. This way it is easier to understand that one is the inverse of the other.",
+      "range": {
+        "startLine": 106,
+        "startChar": 9,
+        "endLine": 106,
+        "endChar": 24
+      },
+      "revId": "8a21d93b81f4d72d542ed01a2443a7e1cadd37a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c7d73c2_3507b51b",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:02:40Z",
+      "side": 1,
+      "message": "Another possibility is\n\n\n    return Promise.all(devices.device.map(async (device) \u003d\u003e {\n      ...\n    }));",
+      "range": {
+        "startLine": 168,
+        "startChar": 4,
+        "endLine": 168,
+        "endChar": 40
+      },
+      "revId": "8a21d93b81f4d72d542ed01a2443a7e1cadd37a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d5760d7f_da3b90d7",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:02:40Z",
+      "side": 1,
+      "message": "This can be replaced with map:\n\n\n    schemaList \u003d sensors.devices.map(getDeviceSchema)\n\n\nEasier to understand that this operation is a mapping operation. forEach forces the reader to understand what it is happening for each element.",
+      "range": {
+        "startLine": 175,
+        "startChar": 22,
+        "endLine": 175,
+        "endChar": 29
+      },
+      "revId": "8a21d93b81f4d72d542ed01a2443a7e1cadd37a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dab363b8_5356c297",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:02:40Z",
+      "side": 1,
+      "message": "Instead of pushing to a list, you can return this as the result of the map. The result of Promise.all will be the array.",
+      "range": {
+        "startLine": 177,
+        "startChar": 6,
+        "endLine": 177,
+        "endChar": 21
+      },
+      "revId": "8a21d93b81f4d72d542ed01a2443a7e1cadd37a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "26647e56_38d76864",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:02:40Z",
+      "side": 1,
+      "message": "return Promise.all(promises);\n\nor as pointed above.",
+      "range": {
+        "startLine": 180,
+        "startChar": 4,
+        "endLine": 182,
+        "endChar": 22
+      },
+      "revId": "8a21d93b81f4d72d542ed01a2443a7e1cadd37a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

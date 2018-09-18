@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8983a91d_c75eee81",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "Why is it like this?",
+      "range": {
+        "startLine": 149,
+        "startChar": 2,
+        "endLine": 149,
+        "endChar": 54
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c8c57bc_903bc844",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "Will we need to subscribe to existing devices at start()?",
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "02d290ac_851c9499",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "message",
+      "range": {
+        "startLine": 283,
+        "startChar": 12,
+        "endLine": 283,
+        "endChar": 15
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07bb4c02_87914057",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "The following",
+      "range": {
+        "startLine": 293,
+        "startChar": 26,
+        "endLine": 293,
+        "endChar": 30
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ae56b910_2a45e95d",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "Can value be a boolean? If so, at this point it will be \u0027true\u0027|\u0027false\u0027 or true|false?",
+      "range": {
+        "startLine": 299,
+        "startChar": 91,
+        "endLine": 299,
+        "endChar": 96
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ef4295d_d4554155",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 319,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "Move this fix to where this code is inserted.",
+      "range": {
+        "startLine": 319,
+        "startChar": 48,
+        "endLine": 319,
+        "endChar": 56
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c06a767e_07da1833",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T19:46:48Z",
+      "side": 1,
+      "message": "Move this fix to where this code is inserted",
+      "range": {
+        "startLine": 331,
+        "startChar": 48,
+        "endLine": 331,
+        "endChar": 57
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

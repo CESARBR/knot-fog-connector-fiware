@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "7e183ba7_48827050",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-09-18T17:08:25Z",
+      "side": 1,
+      "message": "In the next patch you decide to create a function that receive a single schema item to be mapped. This could follow the same ideia, and then you move the `map`ping to `mapSensorToFiware`.",
+      "range": {
+        "startLine": 77,
+        "startChar": 9,
+        "endLine": 77,
+        "endChar": 26
+      },
+      "revId": "131f159737bae72a6e733ce63b226d3ce23763dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c6ff935_90233d03",
         "filename": "esm/Connector.js",
         "patchSetId": 1

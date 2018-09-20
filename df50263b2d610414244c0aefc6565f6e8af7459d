@@ -45,6 +45,30 @@
       "revId": "df50263b2d610414244c0aefc6565f6e8af7459d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a0bfad3_04fa6aaa",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-20T12:34:49Z",
+      "side": 1,
+      "message": "We have see that this library is only suitable for constructing new agents instead of being used to devices communication.",
+      "parentUuid": "52493a03_d69c361a",
+      "range": {
+        "startLine": 13,
+        "startChar": 15,
+        "endLine": 13,
+        "endChar": 28
+      },
+      "revId": "df50263b2d610414244c0aefc6565f6e8af7459d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

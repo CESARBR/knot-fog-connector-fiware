@@ -22,6 +22,30 @@
       "revId": "b5aa5c23a1541c913415e8cc43a601076628e6e4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6bd6279b_1547accf",
+        "filename": "esm/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:40:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ae8fafa_1848158d",
+      "range": {
+        "startLine": 238,
+        "startChar": 16,
+        "endLine": 238,
+        "endChar": 23
+      },
+      "revId": "b5aa5c23a1541c913415e8cc43a601076628e6e4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

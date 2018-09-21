@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d002c8ac_a00d4ca7",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:28:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7e183ba7_48827050",
+      "range": {
+        "startLine": 77,
+        "startChar": 9,
+        "endLine": 77,
+        "endChar": 26
+      },
+      "revId": "131f159737bae72a6e733ce63b226d3ce23763dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c6ff935_90233d03",
         "filename": "esm/Connector.js",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "d105328e_e0af1afc",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:28:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c6ff935_90233d03",
+      "range": {
+        "startLine": 78,
+        "startChar": 2,
+        "endLine": 88,
+        "endChar": 26
+      },
+      "revId": "131f159737bae72a6e733ce63b226d3ce23763dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1025fab7_4b3eec04",
         "filename": "esm/Connector.js",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2018-09-18T16:58:55Z",
       "side": 1,
       "message": "You can use the map to create the list instead of pushing to preexistent list:\n\n```\nschemaList.map(schema \u003d\u003e mapSensorToFiware(id, schema));\n```\n\nOr yet:\n\n```\nschemaList.map(_.partial(mapSensorToFiware, id));\n```",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 73
+      },
+      "revId": "131f159737bae72a6e733ce63b226d3ce23763dd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8af8767b_37ced542",
+        "filename": "esm/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:28:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1025fab7_4b3eec04",
       "range": {
         "startLine": 150,
         "startChar": 4,

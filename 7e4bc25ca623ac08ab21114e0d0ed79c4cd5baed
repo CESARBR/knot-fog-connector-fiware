@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "812adc69_cf956009",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Because the message could arrives in two formats. When it is a message to a device, we can use the entityId of the response:\n\n`topic ABCD123@setConfig|online\u003dtrue`\n\nBut, when it is a message to a sensor the entityId itself isn\u0027t enough: `topic 1@setData|35`. Thus, we extract the apiKey of the topic, which represents the id of device.\n\nSo, in the ternary operation whe verify if the apiKey has default value (defined in the service creation at start), if it has we only need get the entityId, if no we need get the apiKey;",
+      "parentUuid": "8983a91d_c75eee81",
+      "range": {
+        "startLine": 149,
+        "startChar": 2,
+        "endLine": 149,
+        "endChar": 54
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3c8c57bc_903bc844",
         "filename": "esm/Connector.js",
         "patchSetId": 4
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "618e0a70_6994c492",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Yes and I\u0027ve implemented that.",
+      "parentUuid": "3c8c57bc_903bc844",
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "02d290ac_851c9499",
         "filename": "esm/Connector.js",
         "patchSetId": 4
@@ -53,6 +95,30 @@
       "writtenOn": "2018-09-18T19:46:48Z",
       "side": 1,
       "message": "message",
+      "range": {
+        "startLine": 283,
+        "startChar": 12,
+        "endLine": 283,
+        "endChar": 15
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e830ee3d_98d9219f",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02d290ac_851c9499",
       "range": {
         "startLine": 283,
         "startChar": 12,
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "505e2072_48ed72f4",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "07bb4c02_87914057",
+      "range": {
+        "startLine": 293,
+        "startChar": 26,
+        "endLine": 293,
+        "endChar": 30
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ae56b910_2a45e95d",
         "filename": "esm/Connector.js",
         "patchSetId": 4
@@ -99,6 +189,30 @@
       "writtenOn": "2018-09-18T19:46:48Z",
       "side": 1,
       "message": "Can value be a boolean? If so, at this point it will be \u0027true\u0027|\u0027false\u0027 or true|false?",
+      "range": {
+        "startLine": 299,
+        "startChar": 91,
+        "endLine": 299,
+        "endChar": 96
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c451cc04_7d40f1bd",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "According to API (https://github.com/CESARBR/knot-fog-connector#onconfigupdatedcb-promisevoid), the values will be always numbers. Should I prepare to receive undesirable values?",
+      "parentUuid": "ae56b910_2a45e95d",
       "range": {
         "startLine": 299,
         "startChar": 91,
@@ -134,6 +248,30 @@
     },
     {
       "key": {
+        "uuid": "d6a03b27_80f98f9f",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 319,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9ef4295d_d4554155",
+      "range": {
+        "startLine": 319,
+        "startChar": 48,
+        "endLine": 319,
+        "endChar": 56
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c06a767e_07da1833",
         "filename": "esm/Connector.js",
         "patchSetId": 4
@@ -145,6 +283,30 @@
       "writtenOn": "2018-09-18T19:46:48Z",
       "side": 1,
       "message": "Move this fix to where this code is inserted",
+      "range": {
+        "startLine": 331,
+        "startChar": 48,
+        "endLine": 331,
+        "endChar": 57
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0263b50_c1622cd4",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-09-21T18:39:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c06a767e_07da1833",
       "range": {
         "startLine": 331,
         "startChar": 48,

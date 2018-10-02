@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c12dab51_9e3e01c2",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-02T21:52:31Z",
+      "side": 1,
+      "message": "Will this work if I install with `--production`?",
+      "revId": "81e9653b8930ceb8ea683532deae164d6e0191b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

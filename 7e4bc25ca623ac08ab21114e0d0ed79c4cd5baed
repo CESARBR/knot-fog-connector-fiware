@@ -225,6 +225,30 @@
     },
     {
       "key": {
+        "uuid": "add05e59_9e20d42d",
+        "filename": "esm/Connector.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-03T03:48:33Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c451cc04_7d40f1bd",
+      "range": {
+        "startLine": 299,
+        "startChar": 91,
+        "endLine": 299,
+        "endChar": 96
+      },
+      "revId": "7e4bc25ca623ac08ab21114e0d0ed79c4cd5baed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ef4295d_d4554155",
         "filename": "esm/Connector.js",
         "patchSetId": 4

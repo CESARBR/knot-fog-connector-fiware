@@ -16,6 +16,24 @@
       "revId": "81e9653b8930ceb8ea683532deae164d6e0191b8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3505c900_e97ea60d",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-10-03T13:47:55Z",
+      "side": 1,
+      "message": "Yes, it works.",
+      "parentUuid": "c12dab51_9e3e01c2",
+      "revId": "81e9653b8930ceb8ea683532deae164d6e0191b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

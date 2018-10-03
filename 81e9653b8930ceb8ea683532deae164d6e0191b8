@@ -34,6 +34,24 @@
       "revId": "81e9653b8930ceb8ea683532deae164d6e0191b8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8987cd65_40f2c34a",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-03T16:50:27Z",
+      "side": 1,
+      "message": "Try removing `node_modules` and then running `npm i --production`.",
+      "parentUuid": "3505c900_e97ea60d",
+      "revId": "81e9653b8930ceb8ea683532deae164d6e0191b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

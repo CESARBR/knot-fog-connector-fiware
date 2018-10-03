@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "2b461aca_8650b586",
+        "filename": "esm/Connector.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-10-03T17:22:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df64bdf5_46f0ccfb",
+      "revId": "eeb594fc3a9d4fc2eae3c05ab8c72cd497c7d9ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2b86dac0_169145fc",
         "filename": "esm/Connector.js",
         "patchSetId": 6
@@ -102,6 +120,24 @@
       "side": 1,
       "message": "So we can ignore it.",
       "parentUuid": "ecad1d59_e98598e3",
+      "revId": "eeb594fc3a9d4fc2eae3c05ab8c72cd497c7d9ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ac2eed8_fdc59974",
+        "filename": "esm/Connector.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2018-10-03T17:22:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1fbc67ca_15107b76",
       "revId": "eeb594fc3a9d4fc2eae3c05ab8c72cd497c7d9ea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true

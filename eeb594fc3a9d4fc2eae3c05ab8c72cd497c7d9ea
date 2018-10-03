@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5120d7b9_b68097fc",
+        "filename": "esm/Connector.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-03T00:44:27Z",
+      "side": 1,
+      "message": "If it is reconnecting we shouldn\u0027t reject the promise, or if we reject it, we should cancel the reconnection.",
+      "revId": "eeb594fc3a9d4fc2eae3c05ab8c72cd497c7d9ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2b86dac0_169145fc",
+        "filename": "esm/Connector.js",
+        "patchSetId": 6
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-03T00:44:27Z",
+      "side": 1,
+      "message": "\u0027close\u0027 can be sent before \u0027connect\u0027? If not, we should ignore it, because the promise will be already resolved and it can generate confusion.",
+      "revId": "eeb594fc3a9d4fc2eae3c05ab8c72cd497c7d9ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

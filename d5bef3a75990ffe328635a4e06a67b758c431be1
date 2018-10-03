@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dcd65748_476d5c4a",
+        "filename": "esm/Connector.js",
+        "patchSetId": 8
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1013086
+      },
+      "writtenOn": "2018-10-03T03:43:23Z",
+      "side": 1,
+      "message": "Extract this to method (onGetData, handleGetData, etc)",
+      "range": {
+        "startLine": 164,
+        "startChar": 4,
+        "endLine": 165,
+        "endChar": 71
+      },
+      "revId": "d5bef3a75990ffe328635a4e06a67b758c431be1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

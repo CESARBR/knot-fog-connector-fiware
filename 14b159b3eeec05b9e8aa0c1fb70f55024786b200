@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d5936c2e_a6256ea7",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 374,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2019-05-23T00:06:22Z",
+      "side": 0,
+      "message": "This method should be removed too since it\u0027s deprecated along with the handlers you are removing in this patch. Hence, you need to update the commit title/message to describe this change.",
+      "range": {
+        "startLine": 374,
+        "startChar": 8,
+        "endLine": 374,
+        "endChar": 24
+      },
+      "revId": "14b159b3eeec05b9e8aa0c1fb70f55024786b200",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

@@ -38,18 +38,7 @@ async function createService(iotAgentUrl, orionUrl, servicePath, apiKey, entityT
   service.apikey = apiKey;
   service.cbroker = orionUrl;
 
-  if (entityType === 'device') {
-    service.commands = [
-      {
-        name: 'setConfig',
-        type: 'command',
-      },
-      {
-        name: 'setProperties',
-        type: 'command',
-      },
-    ];
-  } else if (entityType === 'sensor') {
+  if (entityType === 'sensor') {
     service.attributes = [{
       name: 'value',
       type: 'string',
@@ -90,8 +79,8 @@ function mapSensorToFiware(id, schema) {
   const schemaList = _.map(schema, (value, key) => ({ name: key, type: typeof value, value }));
 
   return {
-    device_id: schema.sensor_id.toString(),
-    entity_name: schema.sensor_id.toString(),
+    device_id: schema.sensorId.toString(),
+    entity_name: schema.sensorId.toString(),
     entity_type: 'sensor',
     protocol: 'IoTA-UL',
     transport: 'MQTT',
@@ -106,15 +95,15 @@ function mapSensorToFiware(id, schema) {
 function mapSensorFromFiware(device) {
   const schema = {};
 
-  schema.sensor_id = parseInt(device.device_id, 10);
+  schema.sensorId = parseInt(device.device_id, 10);
 
   device.static_attributes.forEach((attr) => {
-    if (attr.name === 'value_type') {
-      schema.value_type = attr.value;
+    if (attr.name === 'valueType') {
+      schema.valueType = attr.value;
     } else if (attr.name === 'unit') {
       schema.unit = attr.value;
-    } else if (attr.name === 'type_id') {
-      schema.type_id = attr.value;
+    } else if (attr.name === 'typeId') {
+      schema.typeId = attr.value;
     } else if (attr.name === 'name') {
       schema.name = attr.value;
     }
@@ -209,7 +198,7 @@ async function subscribeToEntities(client, devices) {
   const promises = devices.map(async (device) => {
     await client.subscribe(`/default/${device.id}/cmd`);
     device.schema.map(async (sensor) => {
-      await client.subscribe(`/${device.id}/${sensor.sensor_id}/cmd`);
+      await client.subscribe(`/${device.id}/${sensor.sensorId}/cmd`);
     });
   });
 
@@ -318,7 +307,7 @@ class Connector {
 
   async publishData(id, dataList) {
     const promises = dataList.map(async (data) => {
-      await this.client.publish(`/${id}/${data.sensor_id}/attrs/value`, data.value);
+      await this.client.publish(`/${id}/${data.sensorId}/attrs/value`, data.value);
     });
 
     await Promise.all(promises);
@@ -332,13 +321,22 @@ class Connector {
     };
 
     const sensors = await Promise.all(schemaList.map(async (schema) => {
-      await this.client.subscribe(`/${id}/${schema.sensor_id}/cmd`);
+      await this.client.subscribe(`/${id}/${schema.sensorId}/cmd`);
+
       return mapSensorToFiware(id, schema);
     }));
 
-    await request.post({
-      url, headers, body: { devices: sensors }, json: true,
-    });
+    try {
+      await request.post({
+        url, headers, body: { devices: sensors }, json: true,
+      });
+    } catch (err) {
+      /* Error 409 means the request couldn't be completed due to a conflict in respect
+      to the target resource - contextually, a (deviceId, serviceId) pair already exists.
+      This may occur when attempting to make changes in a resource which the base connector is
+      already acting upon due to a previous request (e.g. updateSchema). As soon as the request
+      is processed, the error will be gone; therefore, it shouldn't interrupt the program. */
+    }
   }
 
   // Cloud to device (fog)

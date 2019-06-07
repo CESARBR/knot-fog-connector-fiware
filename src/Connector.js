@@ -112,28 +112,40 @@ function mapSensorFromFiware(device) {
   return schema;
 }
 
-function parseULValue(value) {
-  if (value.indexOf('=') === -1) {
-    return value;
+function parseULValue(valueType, value) {
+  /* add logic to support complex commands:
+   * fiware-iotagent-ul.readthedocs.io/en/latest/usermanual/index.html
+   */
+
+  switch (valueType) {
+    case 1:
+      return parseInt(value, 10);
+    case 2:
+      return Number(value);
+    case 3:
+      return (value === 'true');
+    case 4:
+      return Buffer.from(value).toString('base64');
+    default:
+      break;
   }
 
-  const objValue = {};
-  const attrs = value.split('|');
-
-  attrs.forEach((attr) => {
-    objValue[attr.slice(0, attr.indexOf('='))] = attr.slice(attr.indexOf('=') + 1, attr.length);
-  });
-
-  return objValue;
+  return value;
 }
 
-function parseULMessage(topic, message) {
-  const apiKey = topic.split('/')[1];
-  const entityId = message.slice(0, message.indexOf('@'));
-  const command = message.slice(message.indexOf('@') + 1, message.indexOf('|'));
-  const value = parseULValue(message.slice(message.indexOf('|') + 1, message.length));
+function parseULMessage(topic, message, schema) {
+  const msgFields = message.split('|');
+  const deviceData = msgFields[0].split('@');
+  const dataSection = msgFields.splice(1);
+
+  const topicFields = topic.split('/');
+  const apiKey = topicFields[1];
+  const entityId = deviceData[0];
+  const command = deviceData[1];
 
   const id = apiKey === 'default' ? entityId : apiKey;
+  const sensor = schema.find(s => s.sensorId == entityId);
+  const value = parseULValue(sensor.valueType, dataSection[0]);
 
   return {
     id,
@@ -227,7 +239,9 @@ class Connector {
         const devices = await this.listDevices();
         await subscribeToEntities(this.client, devices);
         this.client.on('message', async (topic, payload) => {
-          await this.messageHandler(topic, payload);
+          const deviceId = topic.split('/')[1];
+          const device = await devices.find(d => d.id === deviceId);
+          await this.messageHandler(topic, payload, device.schema);
         });
         return resolve();
       });
@@ -235,8 +249,8 @@ class Connector {
     });
   }
 
-  async messageHandler(topic, payload) {
-    const message = parseULMessage(topic.toString(), payload.toString());
+  async messageHandler(topic, payload, schema) {
+    const message = parseULMessage(topic, payload.toString(), schema);
     if (message.command === 'setData') {
       await this.handleSetData(topic, payload, message);
     } else if (message.command === 'getData') {
@@ -245,13 +259,18 @@ class Connector {
   }
 
   async handleSetData(topic, payload, message) {
+    const data = [{
+      sensorId: parseInt(message.entityId, 10),
+      value: message.value,
+    }];
     await this.client.publish(`${topic}exe`, payload);
-    this.onDataUpdatedCb(message.id, parseInt(message.entityId, 10), message.value);
+    this.onDataUpdatedCb(message.id, data);
   }
 
   async handleGetData(topic, payload, message) {
+    const sensorIds = [parseInt(message.entityId, 10)];
     await this.client.publish(`${topic}exe`, payload);
-    this.onDataRequestedCb(message.id, parseInt(message.entityId, 10));
+    this.onDataRequestedCb(message.id, sensorIds);
   }
 
   async addDevice(device) {
@@ -307,7 +326,7 @@ class Connector {
 
   async publishData(id, dataList) {
     const promises = dataList.map(async (data) => {
-      await this.client.publish(`/${id}/${data.sensorId}/attrs/value`, data.value);
+      await this.client.publish(`/${id}/${data.sensorId}/attrs/value`, data.value.toString());
     });
 
     await Promise.all(promises);
@@ -346,7 +365,6 @@ class Connector {
     this.onDisconnectedCb = cb;
   }
 
-  // cb(event) where event is { id, sensorId }
   async onReconnected(cb) {
     this.onReconnectedCb = cb;
   }

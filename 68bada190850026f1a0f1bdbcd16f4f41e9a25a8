@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7e588454_b3a384f1",
+        "filename": "src/Connector.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2019-06-10T05:05:43Z",
+      "side": 1,
+      "message": "Is this supposed to be a TODO comment? If so, it should follow the format\n// TODO: ...\n\nThus, we can skip it when reading the coding.",
+      "range": {
+        "startLine": 116,
+        "startChar": 0,
+        "endLine": 118,
+        "endChar": 5
+      },
+      "revId": "68bada190850026f1a0f1bdbcd16f4f41e9a25a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

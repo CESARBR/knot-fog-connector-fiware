@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "46a95e7d_2bd86f10",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1013096
+      },
+      "writtenOn": "2019-06-11T17:25:51Z",
+      "side": 1,
+      "message": "You changed this function behavior and it is not anymore parsing a UL value (actually you transfer to `parseULMessage`) but now you are parsing a string value based in type defined on the KNoT protocol.\n\nWe should now change the function name to avoid some misunderstanding when we maintain the code.\n\nI suggest `parseStringValue` or `parseKNoTValue`",
+      "range": {
+        "startLine": 115,
+        "startChar": 9,
+        "endLine": 115,
+        "endChar": 21
+      },
+      "revId": "5e3888c03bf12c6c490e62ae9d916c35e6ce91b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e56eb44_9adc4138",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1013096
+      },
+      "writtenOn": "2019-06-11T17:25:51Z",
+      "side": 1,
+      "message": "const [strValue] \u003d msgFields.splice(1);",
+      "range": {
+        "startLine": 133,
+        "startChar": 2,
+        "endLine": 134,
+        "endChar": 42
+      },
+      "revId": "5e3888c03bf12c6c490e62ae9d916c35e6ce91b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b78ece31_e4488d27",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1013096
+      },
+      "writtenOn": "2019-06-11T17:25:51Z",
+      "side": 1,
+      "message": "Use array destructuring:\n`const [entityId, command] \u003d msgFields[0].split(\u0027@\u0027);`",
+      "range": {
+        "startLine": 135,
+        "startChar": 2,
+        "endLine": 137,
+        "endChar": 32
+      },
+      "revId": "5e3888c03bf12c6c490e62ae9d916c35e6ce91b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3541523f_110ce206",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1013096
+      },
+      "writtenOn": "2019-06-11T17:25:51Z",
+      "side": 1,
+      "message": "`const [, apiKey] \u003d topic.split(\u0027/\u0027);`\nor \n`const apiKey \u003d topic.split(\u0027/\u0027)[1];`",
+      "revId": "5e3888c03bf12c6c490e62ae9d916c35e6ce91b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a465dc34_5f599440",
+        "filename": "src/Connector.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1013096
+      },
+      "writtenOn": "2019-06-11T17:25:51Z",
+      "side": 1,
+      "message": "`parse..., strValue); `",
+      "revId": "5e3888c03bf12c6c490e62ae9d916c35e6ce91b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

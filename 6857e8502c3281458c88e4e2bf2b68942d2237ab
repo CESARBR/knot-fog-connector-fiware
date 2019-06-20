@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c44b671_713253c4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2019-06-20T20:11:47Z",
+      "side": 1,
+      "message": "[...], removed device\u0027s commands which\nare required only to update the device\u0027s settings [...].",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 49
+      },
+      "revId": "6857e8502c3281458c88e4e2bf2b68942d2237ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

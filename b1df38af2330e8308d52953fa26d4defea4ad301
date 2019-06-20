@@ -22,6 +22,29 @@
       "revId": "b1df38af2330e8308d52953fa26d4defea4ad301",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95bd186c_e8465a9e",
+        "filename": "src/Connector.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 1013169
+      },
+      "writtenOn": "2019-06-20T13:47:53Z",
+      "side": 1,
+      "message": "cause",
+      "range": {
+        "startLine": 381,
+        "startChar": 66,
+        "endLine": 381,
+        "endChar": 70
+      },
+      "revId": "b1df38af2330e8308d52953fa26d4defea4ad301",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
